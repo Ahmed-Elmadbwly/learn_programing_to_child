@@ -1,0 +1,351 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --black-white: #fff;
+    --main-yellow: #daf20a;
+    --main-purple: #3f3ca7;
+    --main-purple-heading: #3f3ca7;
+    --linear1: #525ae9;
+    --linear2: #343cd8;
+    --violet: #3f3ca7;
+    --fathy: #f1f1f1;
+
+}
+
+.dark-mode {
+    --background-color: #1c1c1c;
+    --text-color: #fff;
+    --main-purple: #131111;
+    --black-white: #1c1c1c;
+    --main-purple-heading: #fff;
+    --linear1: #280e63;
+    --linear2: #332a49;
+    --violet: violet;
+    --fathy: #1c1c1c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/Moon.svg');
+}
+
+
+/* track section */
+.track {
+    font-weight: bold;
+    padding: 75px 0;
+    margin: 60px 0 40px;
+    height: 100%;
+}
+
+.track .container {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.track .container #r span {
+    background: var(--main-purple);
+    color: #fff;
+    text-align: start;
+    display: block;
+    font-size: 20px;
+    width: fit-content;
+    padding: 33px 70px;
+    border-radius: 100px 250px 100px 250px;
+    margin: 40px 0 65px;
+}
+
+.track .container .num {
+    display: inline-block;
+    padding: 10px;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    color: #000;
+    line-height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 7px;
+}
+
+.track .container>.map figure {
+    border-radius: 20px;
+    padding: 40px 15px;
+}
+
+.en,
+.ep {
+    display: none;
+}
+
+.map .flip-card-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.map figure aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map figure aside h1 {
+    width: 100%;
+    color: var(--main-yellow);
+    border: 2px solid var(--main-yellow);
+    border-radius: 100%;
+    text-align: center;
+    line-height: 30px;
+    height: 40px;
+    font-size: 30px;
+    width: 40px;
+}
+
+.map figure aside h2 {
+    width: 50%;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--main-yellow);
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev{
+    color: var(--main-purple);
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next{
+    color: var(--main-purple);
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #sec-1 div.container h1 {
+        font-size: 2rem;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        width: 710px;
+    }
+
+    .en,
+    .ep {
+        display: block;
+    }
+
+    #sec-1 div.container h1 {
+        font-size: 2.5rem;
+    }
+
+    /*track section */
+
+    .track .container>#r h2 {
+        font-size: 30px;
+        margin-bottom: 2, 3rem;
+    }
+
+    .track .container img {
+        width: 70px;
+        height: 70px;
+    }
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        width: 930px;
+    }
+
+
+
+    /*track section */
+
+    .track .container>#r h2 {
+        font-size: 35px;
+        margin-bottom: 2, 6rem;
+    }
+
+    .track .container img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    /* .track .container>.map figcaption{
+            padding: 5px;
+            font-size:10px;
+        } */
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+
+    #mainMenu .container #menuBtn+nav a {
+        margin-left: 50px;
+    }
+
+    #sec-1 div.container h1 {
+        font-size: 5rem;
+    }
+
+    /*track section */
+    .track .container>#r h2 {
+        font-size: 40px;
+        margin-bottom: 2, 9rem;
+    }
+
+
+    .track .container img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .track .container>.map figcaption {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1340px;
+    }
+
+    #mainMenu .container #menuBtn+nav a {
+        margin-left: 65px;
+    }
+
+    #sec-1 div.container h1 {
+        font-size: 6rem;
+    }
+
+    /*track section */
+
+    .track .container>#r h2 {
+        font-size: 45px;
+        margin-bottom: 3, 1rem;
+    }
+
+    .track .container img {
+        width: 160px;
+        height: 160px;
+    }
+
+
+    /* .track .container>.map figcaption{
+                padding: 5px;
+                font-size:10px;
+            } */
+
+}
+
+@media (min-width: 1600px) {
+    .container {
+        width: 1540px;
+    }
+
+    #mainMenu .container #menuBtn+nav a {
+        margin-left: 70px;
+    }
+
+    /*track section */
+
+
+    .track .container>#r h2 {
+        font-size: 50px;
+        margin-bottom: 3, 4rem;
+    }
+
+    .track .container img {
+        width: 190px;
+        height: 190px;
+    }
+
+}
+
+.flip-card {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.flip-card-back figcaption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+    
+}
+
+.flip-card-back figcaption ul li{
+    margin-bottom: 10px;
+
+}
+
+.flip-card-front {
+    background-color: var(--main-purple);
+    border-radius: 23px;
+}
+
+.flip-card-back {
+    background-color: var(--fathy);
+    color: var(--text-color);
+    border-radius: 23px;
+    transform: rotateY(180deg);
+}

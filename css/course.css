@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --black-white: #fff;
+    --main-yellow: #daf20a;
+    --main-purple: #3f3ca7;
+    --main-purple-heading: #3f3ca7;
+    --linear1: #525ae9;
+    --linear2: #343cd8;
+    --violet: #3f3ca7;
+
+}
+
+.dark-mode {
+    --background-color: #1c1c1c;
+    --text-color: #fff;
+    --main-purple: #131111;
+    --black-white: #1c1c1c;
+    --main-purple-heading: #fff;
+    --linear1: #280e63;
+    --linear2: #332a49;
+    --violet: violet;
+}
+
+.container {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#c {
+    text-align: center;
+    font-weight: bold;
+}
+
+#mainMenu {
+    position: unset;
+    width: 100%;
+    z-index: 1;
+}
+
+video {
+    width: unset;
+    height: unset;
+    z-index: 1;
+    position: unset;
+}
+
+#c .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+#c .container .left {
+    border-radius: 14px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#c .container .left::-webkit-scrollbar {
+    display: none;
+}
+
+#c .container .left>#l {
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: var(--main-purple);
+    color: var(--main-yellow);
+    border-radius: 20px;
+    width: 240px;
+    box-shadow: 1px 1px 1px #cecaca;
+    margin: 15px 0;
+    padding: 5px 0;
+}
+
+#c .container .left>#l h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+}
+
+#c .container .left>#v {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#c .container .left>#v .topic {
+    display: block;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    width: 80%;
+    color: white;
+    border: 1px solid gray;
+    background-color: var(--main-purple);
+}
+
+#c .container .left>#v .topic:visited {
+    background-color: rgb(80, 80, 80);
+}
+
+#c .container .left>#v .topic:hover {
+    background-color: rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+#c .container .right>video {
+    width: 100%;
+    height: 264px;
+    box-shadow: 1px 1px 20px 1px #cecaca;
+    border-radius: 17px;
+    border: 1px solid #9f9f9f;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 520px;
+    }
+
+    #c .container .right>video {
+        height: 350px;
+        width: 100%;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        width: 710px;
+    }
+
+    #c .container .right>video {
+        height: 300px;
+    }
+
+    #c .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #c .container .left {
+        width: 43%;
+        border: 1px solid #ccc;
+        padding: 0 5px;
+    }
+
+    #c .container .right {
+        width: 55%;
+    }
+
+    #c .container .left #l {
+        width: 80%
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        width: 930px;
+    }
+
+    #c .container {
+        padding: 80px 0;
+    }
+
+    #c .container .right {
+        width: 65%;
+        height: 400px;
+    }
+    #c .container .right video{
+        height: 380px;
+    }
+    #c .container .left {
+        order: -1;
+        width: 25%;
+        height: 400px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+    #c .container .right {
+        height: 400px;
+    }
+    #c .container .right video {
+        height: 400px;
+    }
+
+    #c .container .left {
+        width: 25%;
+        height: 380px;
+    }
+}

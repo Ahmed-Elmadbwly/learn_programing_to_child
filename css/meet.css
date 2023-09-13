@@ -1,0 +1,415 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --black-white: #fff;
+    --main-yellow: #daf20a;
+    --main-purple: #3f3ca7;
+    --main-purple-heading: var(--main-purple);
+    --linear1: #525ae9;
+    --linear2: #343cd8;
+    --violet: var(--main-purple);
+
+}
+
+.dark-mode {
+    --background-color: #1c1c1c;
+    --text-color: #fff;
+    --main-purple: #131111;
+    --black-white: #1c1c1c;
+    --main-purple-heading: #fff;
+    --linear1: #280e63;
+    --linear2: #332a49;
+    --violet: violet;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../draft-2/Lato-Regular.woff2') format('woff2'),
+        url('../draft-2/Lato-Regular.woff2') format('woff');
+}
+
+html,
+body {
+    position: unset;
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+#mainMenu {
+    position: unset;
+    width: 100%;
+    z-index: 1;
+}
+
+video {
+    width: unset;
+    height: unset;
+    z-index: 1;
+    position: unset;
+}
+
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 18px;
+    background: var(--black-white);
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.top>#l h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.swiper-slide {
+    background: transparent;
+}
+
+/* .slide{
+    position: relative;
+} */
+.active,
+.dot:hover {
+    background-color: var(--main-purple);
+}
+
+body {
+    background-image: url('../img/meet_light2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.meet {
+    /* position: absolute; */
+    display: none;
+    border-radius: 14px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    width: 400px;
+    height: 700px;
+}
+
+.meet {
+    background-color: var(--black-white);
+}
+
+.meet .left>.name {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    font-size: 1.3rem;
+    background-color: var(--main-purple);
+    color: var(--main-yellow);
+    font-weight: 600;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 300px;
+    box-shadow: 1px 1px 8px #cecaca;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.meet .left>.skill {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    font-size: 1rem;
+    background-color: rgb(63, 60, 167, 0.9);
+    color: white;
+    border-radius: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 250px;
+    box-shadow: 1px 1px 8px #cecaca;
+    margin-bottom: 20px;
+}
+
+.meet .right #link {
+    margin-top: 40px;
+}
+
+.meet .right #link>.icon {
+    color: var(--main-purple-heading);
+    margin: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.meet #link>.icon :hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.meet>.right img {
+    margin-top: 20px;
+    border: 1px solid #9f9f9f;
+    width: 400px;
+    height: 310px;
+    border-radius: 14px;
+}
+
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    color: #fff;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    color: #fff;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .top>#l h2 {
+        font-size: 1.9rem;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .top>#l .cir {
+        width: 17px;
+        height: 17px;
+    }
+
+    .meet {
+        margin-top: 0 !important;
+        display: flex;
+        width: 650px;
+        height: 310px;
+    }
+
+    .meet .left>.name {
+        font-size: 1rem;
+        border-radius: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 250px;
+        margin-left: 100px;
+        margin-bottom: 30px;
+    }
+
+    .meet .left>.skill {
+        font-size: 0.8rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 200px;
+        margin-bottom: 15px;
+        margin-right: 90px;
+        margin-left: 100px;
+    }
+
+    .meet .right #link {
+        margin-right: 10px;
+        margin-top: 90px;
+    }
+
+    .meet .right #link>.icon {
+        display: block;
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+
+    .meet>.right {
+        margin-right: 125px;
+        display: flex;
+    }
+
+    .meet>.right img {
+        margin-top: 0;
+        width: 325px;
+        height: 310px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .top>#l h2 {
+        font-size: 1.9rem;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .top>#l .cir {
+        width: 17px;
+        height: 17px;
+    }
+
+    .meet {
+        display: flex;
+        margin-top: 0 !important;
+        width: 770px;
+        height: 330px;
+    }
+
+    .meet .left>.name {
+        font-size: 1.1rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        width: 300px;
+        margin-right: 80px;
+        margin-bottom: 30px;
+
+    }
+
+    .meet .left>.skill {
+        font-size: 1rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        width: 250px;
+        margin-bottom: 15px;
+        margin-right: 100px;
+        margin-left: 120px;
+    }
+
+    .meet .right #link {
+        margin-right: 10px;
+        margin-top: 90px;
+    }
+
+    .meet .right #link>.icon {
+        display: block;
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+
+    .meet>.right {
+        margin-right: 125px;
+        display: flex;
+    }
+
+    .meet>.right img {
+        margin-top: 0;
+        width: 370px;
+        height: 330px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .top>#l h2 {
+        font-size: 1.9rem;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .top>#l .cir {
+        width: 17px;
+        height: 17px;
+    }
+
+    .meet {
+        margin-top: 0 !important;
+        display: flex;
+        width: 850px;
+        height: 360px;
+    }
+
+    .meet .left>.name {
+        margin-left: 65px;
+        font-size: 1.3rem;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 60px;
+        width: 400px;
+        margin-right: 60px;
+        margin-bottom: 30px;
+
+    }
+
+    .meet .left>.skill {
+        font-size: 1.1rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 50px;
+        width: 350px;
+        margin-bottom: 15px;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+
+    .meet .right #link {
+        margin-right: 10px;
+        margin-top: 90px;
+    }
+
+    .meet .right #link>.icon {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .meet>.right {
+        margin-right: 125px;
+        display: flex;
+    }
+
+    .meet>.right img {
+        margin-top: 0;
+        width: 420px;
+        height: 360px;
+    }
+}
